@@ -1,6 +1,7 @@
 import org.jgap.Chromosome;
 import org.jgap.Configuration;
 import org.jgap.Gene;
+import org.jgap.Genotype;
 import org.jgap.InvalidConfigurationException;
 import org.jgap.impl.DefaultConfiguration;
 import org.jgap.impl.IntegerGene;
@@ -19,10 +20,20 @@ public class Agenetico  {
             Chromosome ic = new Chromosome(config, sampleGene); //se crea un cromosoma con 10 genes
             config.setSampleChromosome(ic); //muedtrsa de gen
         }catch (InvalidConfigurationException e) {
+            e.printStackTrace();
+        } 
+       
+    
+    }
+    public void conf_poblacion(Configuration config, int poblacionInicial){
+
+        try {
+            config.setPopulationSize(poblacionInicial);
+            Genotype poblacion = Genotype.randomInitialGenotype(config);
+        } catch (InvalidConfigurationException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
-        } //se le asigna la funcion de aptitud al configurador
-
-    
+        }
+            
     }
 }
