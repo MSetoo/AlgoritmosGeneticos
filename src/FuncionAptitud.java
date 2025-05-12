@@ -24,8 +24,8 @@ public class FuncionAptitud extends FitnessFunction {
         int y3 = (int)ic.getGene(8).getAllele();
         int y4 = (int)ic.getGene(9).getAllele();
         
-        int x_valor = Integer.parseInt ("x1"+"x2"+"x3"+"x4");
-        int y_valor = Integer.parseInt ("y1"+"y2"+"y3"+"y4");
+        int x_valor = Integer.parseInt ("x1"+"x2"+"x3"+"x4",2);
+        int y_valor = Integer.parseInt ("y1"+"y2"+"y3"+"y4",2);
 
 
         if (signoX == 0 ){
@@ -34,7 +34,7 @@ public class FuncionAptitud extends FitnessFunction {
         if (signoY == 0 ){
             y_valor = -y_valor;
         }
-        double score =  x_valor *x_valor+ y_valor* y_valor;
+        double score =  450-(x_valor *x_valor+ y_valor* y_valor);
         return score;
     }
     
