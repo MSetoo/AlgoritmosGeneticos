@@ -7,6 +7,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.jgap.Chromosome;
 import org.jgap.Configuration;
+
 import org.jgap.Gene;
 import org.jgap.Genotype;
 import org.jgap.IChromosome;

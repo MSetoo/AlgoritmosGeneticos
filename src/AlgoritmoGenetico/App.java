@@ -1,5 +1,6 @@
+package AlgoritmoGenetico;
 public class App {
     public static void main(String[] args) throws Exception {
-      new Agenetico().configurar(10,4,10,3);
+      new Agenetico().configurar(10,4,30,5);
     }
 }

@@ -1,3 +1,4 @@
+package AlgoritmoGenetico;
 import org.jgap.FitnessFunction;
 import org.jgap.IChromosome;
 

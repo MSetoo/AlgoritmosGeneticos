@@ -4,6 +4,9 @@
     ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
-        "lib\\jgap.jar"
+        "lib\\Base64.jar",
+        "lib\\commons-codec-1.3.jar",
+        "lib\\jade.jar",
+        "c:\\Users\\User\\OneDrive - Escuela Politécnica Nacional\\Escritorio\\U\\QUINTO SEMESTRO\\IA\\AlgoritmosGeneticos-1\\lib\\jgap.jar"
     ]
 }
